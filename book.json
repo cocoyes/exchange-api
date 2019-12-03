@@ -1,0 +1,42 @@
+{
+	"title": "开发者接口文档",
+	"author": "ApacheMoy",
+	"description": "无界通开发者平台",
+	"language": "zh-hans",
+	"structure": {
+		"readme": "README.md"
+	},
+	"plugins": [
+		"-sharing",
+		"-fontsettings",
+		"back-to-top-button",
+		"copy-code-button",
+		"cuav-chapters",
+		"heading-anchors",
+		"theme-fexa"
+	],
+	"variables": {
+		"themeFexa": {
+			
+		}
+	},
+	"pluginsConfig": {
+		"theme-fexa": {
+			"search-placeholder": "输入关键字搜索",
+			"logo": "./logo.png",
+			"favicon": "./favicon.ico"
+		}
+	},
+	"links": {
+		"sidebar": {
+			
+		}
+	},
+	"styles": {
+		"website": "styles/website.css",
+		"ebook": "styles/ebook.css",
+		"pdf": "styles/pdf.css",
+		"mobi": "styles/mobi.css",
+		"epub": "styles/epub.css"
+	}
+}
