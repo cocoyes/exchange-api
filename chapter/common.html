@@ -1,0 +1,451 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>公共接口 · 开发者接口文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="ApacheMoy">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-fexa/fexa.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="private.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+	<div class="header-inner">
+		<!-- LOGO -->
+		<div class="logo"></div>
+		<span class="title"></span>
+
+		<!-- Search -->
+		
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+
+		<!-- Nav -->
+		<ul class="header-nav">
+			
+		</ul>
+	</div>
+
+	<div class="book-summary">
+		<div class="book-summary-title">文档目录</div>
+		
+		
+		<nav role="navigation">
+			
+
+
+<ul class="summary">
+    
+    
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    交易所接口简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="common.html">
+            
+                <a href="common.html">
+            
+                    
+                    公共接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="private.html">
+            
+                <a href="private.html">
+            
+                    
+                    隐私接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+		</nav>
+		
+		
+	</div>
+
+	<!-- Content nav -->
+	<div class="book-anchor">
+		<div class="book-anchor-title">在这篇文章中:</div>
+		<div class="book-anchor-body">
+
+		</div>
+	</div>
+
+	<div class="book-body">
+		
+		<div class="body-inner">
+			
+			
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >公共接口</a>
+    </h1>
+</div>
+
+
+
+
+			<div class="page-wrapper" tabindex="-1" role="main">
+				<div class="page-inner">
+					
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+					<section class="normal markdown-section">
+						
+						<h1 id="&#x516C;&#x5F00;&#x63A5;&#x53E3;">&#x516C;&#x5F00;&#x63A5;&#x53E3;</h1>
+<hr>
+<p>&#x516C;&#x5F00;&#x63A5;&#x53E3;&#x4E0D;&#x9700;&#x8981;&#x7B7E;&#xFF0C;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x5373;&#x53EF;&#x3002;</p>
+<h2 id="&#x540C;&#x6B65;&#x670D;&#x52A1;&#x5668;&#x65F6;&#x95F4;">&#x540C;&#x6B65;&#x670D;&#x52A1;&#x5668;&#x65F6;&#x95F4;</h2>
+<p>&#x67E5;&#x8BE2;&#x670D;&#x52A1;&#x5668;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#x6233;&#xFF0C;&#x4FDD;&#x6301;&#x65F6;&#x95F4;&#x57FA;&#x672C;&#x540C;&#x6B65;&#x3002;</p>
+<h4 id="&#x9650;&#x901F;&#x89C4;&#x5219;&#xFF1A;">&#x9650;&#x901F;&#x89C4;&#x5219;&#xFF1A;/</h4>
+<h4 id="http&#x8BF7;&#x6C42;">HTTP&#x8BF7;&#x6C42;</h4>
+<pre><code class="lang-vbscript"><span class="hljs-keyword">GET</span> /open/synTime
+</code></pre>
+<h4 id="&#x54CD;&#x5E94;&#x793A;&#x4F8B;">&#x54CD;&#x5E94;&#x793A;&#x4F8B;</h4>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;data&quot;</span>: <span class="hljs-number">1569341402664</span>,
+    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;success&quot;</span>,
+    <span class="hljs-string">&quot;total&quot;</span>: <span class="hljs-literal">null</span>
+}
+</code></pre>
+<h2 id="&#x83B7;&#x53D6;&#x652F;&#x6301;&#x7684;&#x4EA4;&#x6613;&#x5BF9;">&#x83B7;&#x53D6;&#x652F;&#x6301;&#x7684;&#x4EA4;&#x6613;&#x5BF9;</h2>
+<p>&#x83B7;&#x53D6;&#x4EA4;&#x6613;&#x6240;&#x5F53;&#x524D;&#x652F;&#x6301;&#x7684;&#x4EA4;&#x6613;&#x5BF9;&#x3002;</p>
+<h4 id="&#x9650;&#x901F;&#x89C4;&#x5219;&#xFF1A;">&#x9650;&#x901F;&#x89C4;&#x5219;&#xFF1A;/</h4>
+<h4 id="http&#x8BF7;&#x6C42;">HTTP&#x8BF7;&#x6C42;</h4>
+<pre><code class="lang-vbscript"><span class="hljs-keyword">GET</span> /open/symbol_thumb
+</code></pre>
+<h4 id="&#x54CD;&#x5E94;&#x793A;&#x4F8B;">&#x54CD;&#x5E94;&#x793A;&#x4F8B;</h4>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;data&quot;</span>: [{
+        <span class="hljs-string">&quot;symbol&quot;</span>: <span class="hljs-string">&quot;ETH/USDT&quot;</span>,
+        <span class="hljs-string">&quot;open&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;high&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;low&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;close&quot;</span>: <span class="hljs-number">198.0908</span>,
+        <span class="hljs-string">&quot;chg&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;change&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;volume&quot;</span>: <span class="hljs-number">401.2624</span>,
+        <span class="hljs-string">&quot;turnover&quot;</span>: <span class="hljs-number">80689.6935</span>,
+        <span class="hljs-string">&quot;lastDayClose&quot;</span>: <span class="hljs-number">198.0908</span>,
+        <span class="hljs-string">&quot;usdRate&quot;</span>: <span class="hljs-number">198.0908</span>,
+        <span class="hljs-string">&quot;baseUsdRate&quot;</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">&quot;closeStr&quot;</span>: <span class="hljs-string">&quot;198.0908&quot;</span>,
+        <span class="hljs-string">&quot;trend&quot;</span>: [<span class="hljs-number">201.0936</span>, <span class="hljs-number">198.0908</span>],
+        <span class="hljs-string">&quot;proportion&quot;</span>: <span class="hljs-number">3</span>
+    }, {
+        <span class="hljs-string">&quot;symbol&quot;</span>: <span class="hljs-string">&quot;KTCH/USDT&quot;</span>,
+        <span class="hljs-string">&quot;open&quot;</span>: <span class="hljs-number">1.8879</span>,
+        <span class="hljs-string">&quot;high&quot;</span>: <span class="hljs-number">1.8988</span>,
+        <span class="hljs-string">&quot;low&quot;</span>: <span class="hljs-number">1.8879</span>,
+        <span class="hljs-string">&quot;close&quot;</span>: <span class="hljs-number">1.8899</span>,
+        <span class="hljs-string">&quot;chg&quot;</span>: <span class="hljs-number">0.0011</span>,
+        <span class="hljs-string">&quot;change&quot;</span>: <span class="hljs-number">0.002</span>,
+        <span class="hljs-string">&quot;volume&quot;</span>: <span class="hljs-number">28417.9903</span>,
+        <span class="hljs-string">&quot;turnover&quot;</span>: <span class="hljs-number">53975.80362441</span>,
+        <span class="hljs-string">&quot;lastDayClose&quot;</span>: <span class="hljs-number">1.8879</span>,
+        <span class="hljs-string">&quot;usdRate&quot;</span>: <span class="hljs-number">1.8899</span>,
+        <span class="hljs-string">&quot;baseUsdRate&quot;</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">&quot;closeStr&quot;</span>: <span class="hljs-string">&quot;1.8899&quot;</span>,
+        <span class="hljs-string">&quot;trend&quot;</span>: [<span class="hljs-number">1.8919</span>, <span class="hljs-number">1.8907</span>, <span class="hljs-number">1.8919</span>, <span class="hljs-number">1.8897</span>, <span class="hljs-number">1.8899</span>, <span class="hljs-number">1.8909</span>, <span class="hljs-number">1.8958</span>, <span class="hljs-number">1.894</span>, <span class="hljs-number">1.8897</span>, <span class="hljs-number">1.894</span>, <span class="hljs-number">1.8879</span>, <span class="hljs-number">1.8889</span>, <span class="hljs-number">1.8909</span>, <span class="hljs-number">1.8929</span>, <span class="hljs-number">1.8899</span>, <span class="hljs-number">1.8919</span>, <span class="hljs-number">1.8929</span>, <span class="hljs-number">1.8938</span>, <span class="hljs-number">1.8988</span>, <span class="hljs-number">1.8909</span>, <span class="hljs-number">1.8907</span>, <span class="hljs-number">1.8978</span>, <span class="hljs-number">1.8927</span>, <span class="hljs-number">1.8899</span>],
+        <span class="hljs-string">&quot;proportion&quot;</span>: <span class="hljs-number">3</span>
+    }],
+    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;SUCCESS&quot;</span>,
+    <span class="hljs-string">&quot;total&quot;</span>: <span class="hljs-literal">null</span>
+}
+</code></pre>
+<h2 id="&#x83B7;&#x53D6;&#x5386;&#x53F2;k&#x7EBF;&#x56FE;">&#x83B7;&#x53D6;&#x5386;&#x53F2;K&#x7EBF;&#x56FE;</h2>
+<p>&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x4EA4;&#x6613;&#x5BF9;&#x7684;&#x5386;&#x53F2;K&#x7EBF;&#x56FE;&#x3002;</p>
+<h4 id="&#x9650;&#x901F;&#x89C4;&#x5219;&#xFF1A;">&#x9650;&#x901F;&#x89C4;&#x5219;&#xFF1A;/</h4>
+<h4 id="http&#x8BF7;&#x6C42;">HTTP&#x8BF7;&#x6C42;</h4>
+<pre><code class="lang-tcl">GET /<span class="hljs-keyword">open</span>/<span class="hljs-keyword">history</span>/kline
+</code></pre>
+<h4 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h4>
+<p>symbol        &#x4EA4;&#x6613;&#x5BF9;&#xFF0C;&#x4F8B;&#x5982; BTC/USDT<br>period        &#x65F6;&#x95F4;&#x67F1;&#xFF0C;&#x4F8B;&#x5982; 1min<br>size        &#x9875;&#x6570;&#xFF0C;&#x4F8B;&#x5982;10  </p>
+<h4 id="&#x54CD;&#x5E94;&#x793A;&#x4F8B;">&#x54CD;&#x5E94;&#x793A;&#x4F8B;</h4>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;data&quot;</span>: [{
+        <span class="hljs-string">&quot;symbol&quot;</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">&quot;openPrice&quot;</span>: <span class="hljs-number">198.0908</span>,
+        <span class="hljs-string">&quot;highestPrice&quot;</span>: <span class="hljs-number">198.0908</span>,
+        <span class="hljs-string">&quot;lowestPrice&quot;</span>: <span class="hljs-number">198.0908</span>,
+        <span class="hljs-string">&quot;closePrice&quot;</span>: <span class="hljs-number">198.0908</span>,
+        <span class="hljs-string">&quot;time&quot;</span>: <span class="hljs-number">1569342180000</span>,
+        <span class="hljs-string">&quot;period&quot;</span>: <span class="hljs-string">&quot;1min&quot;</span>,
+        <span class="hljs-string">&quot;count&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;volume&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;turnover&quot;</span>: <span class="hljs-number">0</span>
+    }],
+    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;SUCCESS&quot;</span>,
+    <span class="hljs-string">&quot;total&quot;</span>: <span class="hljs-literal">null</span>
+}
+</code></pre>
+<h2 id="&#x83B7;&#x53D6;&#x76D8;&#x53E3;&#x4FE1;&#x606F;">&#x83B7;&#x53D6;&#x76D8;&#x53E3;&#x4FE1;&#x606F;</h2>
+<p>&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x4EA4;&#x6613;&#x5BF9;&#x5F53;&#x524D;&#x7684;&#x76D8;&#x53E3;&#x4FE1;&#x606F;&#x3002;</p>
+<h4 id="&#x9650;&#x901F;&#x89C4;&#x5219;&#xFF1A;">&#x9650;&#x901F;&#x89C4;&#x5219;&#xFF1A;/</h4>
+<h4 id="http&#x8BF7;&#x6C42;">HTTP&#x8BF7;&#x6C42;</h4>
+<pre><code class="lang-vbscript"><span class="hljs-keyword">GET</span> /open/trade_plate
+</code></pre>
+<h4 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h4>
+<p>symbol        &#x4EA4;&#x6613;&#x5BF9;&#xFF0C;&#x4F8B;&#x5982; BTC/USDT<br>size        &#x9875;&#x6570;&#xFF0C;&#x4F8B;&#x5982;10</p>
+<h4 id="&#x54CD;&#x5E94;&#x793A;&#x4F8B;">&#x54CD;&#x5E94;&#x793A;&#x4F8B;</h4>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;data&quot;</span>: {
+        <span class="hljs-string">&quot;ask&quot;</span>: [{
+            <span class="hljs-string">&quot;price&quot;</span>: <span class="hljs-number">198.0908</span>,
+            <span class="hljs-string">&quot;amount&quot;</span>: <span class="hljs-number">0.2887</span>,
+            <span class="hljs-string">&quot;priceStr&quot;</span>: <span class="hljs-string">&quot;198.0908&quot;</span>,
+            <span class="hljs-string">&quot;amountStr&quot;</span>: <span class="hljs-string">&quot;0.2887&quot;</span>
+        }],
+        <span class="hljs-string">&quot;bid&quot;</span>: [{
+            <span class="hljs-string">&quot;price&quot;</span>: <span class="hljs-number">198.09</span>,
+            <span class="hljs-string">&quot;amount&quot;</span>: <span class="hljs-number">1.8452</span>,
+            <span class="hljs-string">&quot;priceStr&quot;</span>: <span class="hljs-string">&quot;198.0900&quot;</span>,
+            <span class="hljs-string">&quot;amountStr&quot;</span>: <span class="hljs-string">&quot;1.8452&quot;</span>
+        }]
+    },
+    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;SUCCESS&quot;</span>,
+    <span class="hljs-string">&quot;total&quot;</span>: <span class="hljs-literal">null</span>
+}
+</code></pre>
+<h2 id="&#x83B7;&#x53D6;&#x5386;&#x53F2;&#x6210;&#x4EA4;&#x4FE1;&#x606F;">&#x83B7;&#x53D6;&#x5386;&#x53F2;&#x6210;&#x4EA4;&#x4FE1;&#x606F;</h2>
+<p>&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x4EA4;&#x6613;&#x5BF9;&#x5386;&#x53F2;&#x6210;&#x7EE9;&#x4FE1;&#x606F;</p>
+<h4 id="&#x9650;&#x901F;&#x89C4;&#x5219;&#xFF1A;">&#x9650;&#x901F;&#x89C4;&#x5219;&#xFF1A;/</h4>
+<h4 id="http&#x8BF7;&#x6C42;">HTTP&#x8BF7;&#x6C42;</h4>
+<pre><code class="lang-vbscript"><span class="hljs-keyword">GET</span> /open/trade_history
+</code></pre>
+<h4 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h4>
+<p>symbol        &#x4EA4;&#x6613;&#x5BF9;&#xFF0C;&#x4F8B;&#x5982; BTC/USDT<br>size        &#x9875;&#x6570;&#xFF0C;&#x4F8B;&#x5982;10</p>
+<h4 id="&#x54CD;&#x5E94;&#x793A;&#x4F8B;">&#x54CD;&#x5E94;&#x793A;&#x4F8B;</h4>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;data&quot;</span>: [{
+        <span class="hljs-string">&quot;symbol&quot;</span>: <span class="hljs-string">&quot;ETH/USDT&quot;</span>,
+        <span class="hljs-string">&quot;price&quot;</span>: <span class="hljs-number">198.0908</span>,
+        <span class="hljs-string">&quot;priceStr&quot;</span>: <span class="hljs-string">&quot;198.0908&quot;</span>,
+        <span class="hljs-string">&quot;amount&quot;</span>: <span class="hljs-number">0.0113</span>,
+        <span class="hljs-string">&quot;amountStr&quot;</span>: <span class="hljs-string">&quot;0.0113&quot;</span>,
+        <span class="hljs-string">&quot;buyTurnover&quot;</span>: <span class="hljs-number">2.23842604</span>,
+        <span class="hljs-string">&quot;sellTurnover&quot;</span>: <span class="hljs-number">2.23842604</span>,
+        <span class="hljs-string">&quot;direction&quot;</span>: <span class="hljs-string">&quot;SELL&quot;</span>,
+        <span class="hljs-string">&quot;buyOrderId&quot;</span>: <span class="hljs-string">&quot;E156717399263154&quot;</span>,
+        <span class="hljs-string">&quot;sellOrderId&quot;</span>: <span class="hljs-string">&quot;E156930565562254&quot;</span>,
+        <span class="hljs-string">&quot;time&quot;</span>: <span class="hljs-number">1569305655631</span>
+    }],
+    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;SUCCESS&quot;</span>,
+    <span class="hljs-string">&quot;total&quot;</span>: <span class="hljs-literal">null</span>
+}
+</code></pre>
+
+						
+					</section>
+					
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+				</div>
+			</div>
+			
+		</div>
+
+		
+		
+		<a href="../" class="navigation navigation-prev " aria-label="Previous page: 交易所接口简介">
+			<i class="fa fa-angle-left"></i>
+		</a>
+		
+		
+		<a href="private.html" class="navigation navigation-next " aria-label="Next page: 隐私接口">
+			<i class="fa fa-angle-right"></i>
+		</a>
+		
+		
+		
+	</div>
+	<script>
+		var gitbook = gitbook || [];
+		gitbook.push(function() {
+			gitbook.page.hasChanged({"page":{"title":"公共接口","level":"1.2","depth":1,"next":{"title":"隐私接口","level":"1.3","depth":1,"path":"chapter/private.md","ref":"chapter/private.md","articles":[]},"previous":{"title":"交易所接口简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","back-to-top-button","copy-code-button","cuav-chapters","heading-anchors","theme-fexa","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"livereload":{},"search":{},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"theme-fexa":{"search-placeholder":"输入关键字搜索","logo":"./logo.png","favicon":"./favicon.ico"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"heading-anchors":{},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"ApacheMoy","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{}},"title":"开发者接口文档","language":"zh-hans","links":{"sidebar":{}},"gitbook":"*","description":"无界通开发者平台"},"file":{"path":"chapter/common.md","mtime":"2019-11-22T11:44:38.188Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-03T10:00:26.153Z"},"basePath":"..","book":{"language":""}});
+		});
+	</script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-fexa/fexa.js"></script>
+        
+    
+
+    </body>
+</html>
+
